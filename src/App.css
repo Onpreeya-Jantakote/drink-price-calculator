@@ -1,38 +1,123 @@
-.App {
+* {
+  font-family: 'Sarabun', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #ff7f50;
+  margin-top: 50px;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff8f0;
+  border-radius: 16px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin: 10px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff7f50;
+}
+
+.plus-btn, .minus-btn {
+  border: none;
+  padding: 6px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.plus-btn {
+  background-color: #c3f8c8;
+  color: #2e7d32;
+}
+
+.minus-btn {
+  background-color: #ffd5d5;
+  color: #c62828;
+}
+
+.plus-btn:hover {
+  background-color: #a7f4af;
+}
+
+.minus-btn:hover {
+  background-color: #ffb3b3;
+}
+
+.total {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  color: #ff7f50;
+}
+
+.clear-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #ffcccc;
+  color: #a80000;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clear-btn:hover {
+  background-color: #ff9999;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #ff7f50;
+  font-size: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.summary-row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fef6f0;
+  border-radius: 14px;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-size: 18px;
+  transition: transform 0.1s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.summary-row span:first-child {
+  color: #5d1d00;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.summary-row span:last-child {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+p {
+  text-align: center;
+  color: #999;
+  margin-top: 10px;
+  font-style: italic;
 }
