@@ -28,7 +28,7 @@ const menu = [
   { name: "น้ำแข็ง", price: 30, unit: "ถัง" },
   { name: "โค้ก (ลิตร)", price: 50, unit: "ขวด" },
   { name: "แก้ว", price: 5, unit: "ใบ" },
-  { name: "ทิชชู", price: 10, unit: "ชิ้น" }
+  { name: "ทิชชู", price: 20, unit: "ชิ้น" }
 ];
 
 function App() {
